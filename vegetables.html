@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .cart {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            color: black;
+            transition: 0.3s;
+        }
+        .cart:hover {
+            background-color:#FFFACD;
+            color:black;
+        }
+        /* .cart span {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        } */
+        .cart button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .cart button:hover{
+            background-color:black;
+            border: #4CAF50;
+            color: rgb;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        header {
+        background:linear-gradient(to bottom, rgb(2, 60, 2),rgb(120, 184, 120));
+        padding: 5px 0;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo {
+        width: 10px;
+        height: auto;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+      
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+        
+    }
+
+    nav ul li a:hover {
+        color: rgb(2, 33, 2);
+        font-size: large;
+    }
+    img{
+        width: 200px;
+        height: 100px;
+        aspect-ratio: 2/3;
+    }
+    
+    #veg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px auto;
+    width: 90%;
+  }
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #card2{
+    margin: 10px;
+    border: 1 px solid #ddd;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+ 
+
+    </style>
+</head>
+<body>
+    <header>DVK</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="open.html">Home</a></li>
+            <li><a href="#" target="_blank">Look In</a></li>
+            <li><a href="#" target="_blank">Service</a></li>
+            <li><a href="#" target="_blank">Contact</a></li>
+            <li><a href=""></a><svg class="add"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg></a></li>
+            <li><a href="index.html">LogOut<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg></a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<body>
+    
+    <h1>Vegetables Section</h1>
+    
+    <div id="veg"></div>
+    <script src="./data.js"></script>
+    <script>
+    
+// getting Data
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+vegetables.forEach(vegetable => {
+    let card2 = document.createElement("div");
+    card2.id = "card2";
+    card2.innerHTML = `
+        <img src='${vegetable.image}' style="border-radius: 8px; margin-bottom: 10px;"/>
+        <h4 style="margin: 10px 0;">${vegetable.name}</h4>
+        <p>Price: ${vegetable.price} Rs</p>
+        <button class="add-to-cart" style="padding: 10px 20px; font-size: 14px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">Add to Cart</button>
+    `;
+
+    document.getElementById("veg").appendChild(card2);
+    // add to cart
+card2.querySelector(".add-to-cart").addEventListener("click", () => {
+        cart.push({ name: vegetable.name, price: vegetable.price, image: vegetable.image });
+        localStorage.setItem("cart", JSON.stringify(cart)); // Store cart in localStorage
+        alert(`${vegetable.name} has been added to the cart.`);
+    });
+    
+});
+document.querySelector(".add").addEventListener("click",()=>{
+            window.location.href="./cart.html"
+        })
+
+    </script>
+</body>
+</html>

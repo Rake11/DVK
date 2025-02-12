@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🥦 DVK Organics</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- header -->
+    <header><h1>DVK</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="open.html">Home</a></li>
+                    <li><a href="#" target="_blank">Look In</a></li>
+                    <li><a href="#" target="_blank">Service</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                    <li></li><svg class="addto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg></a></span></li>
+                    <li><a href="index.html">LogOut <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                      </svg></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- search -->
+    <section class="open">
+        <div class="caption">
+           <h1>Village Roots, Harvested Gold  Nature's Best, Freshly Sold.</h1><br>
+            <p>Searching high, searching low, village farms where goodness grows.</p><br>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="search">
+                <button type="submit">Get in</button>
+            </form><br>
+            <marquee behavior="background-color" direction="left"><b>Look to the land, and you shall see the nature’s harvest wild and free. </b></marquee>
+        </div>
+    </section>
+<!-- search result -->
+    <section class="search-results">
+        <h2>Search Results</h2>
+        <div id="result-cards"></div>
+    </section>
+    
+    <!-- items -->
+     <section class="second">
+        <h1>Fresh from Our Organic Farm </h1>
+        <div class="items">
+            <div class="item-card">
+                <a href="./fruits.html" target="_blank"><img src="Assets/fruits.jpg" alt="" height="143.99px"></a>
+                <h2>Fruits</h2>
+                <p>Bursting with natural sweetness and nutrients</p>
+            </div>
+            <div class="item-card">
+                <a href="./vegetables.html" target="_blank"><img src="Assets/veg.jpg" alt=""height="143.99px"></a>
+                <h2>Vegetables</h2>
+                <p>Crisp, vibrant, and harvested at peak freshness</p>
+            </div>
+            <div class="item-card">
+                <a href="./leafy.html" target="_blank"><img src="Assets/leaf.webp" alt=""height="144px" width="200px"></a>
+                <h2>Leafy Vegetables</h2>
+                <p>Packed with vitamins</p>
+            </div>
+        </div>
+     </section>
+     <!-- Visit -->
+     <footer class="footer">
+        <div class="visit">
+            <div class="a"><a href="#"><img src="https://m.media-amazon.com/images/I/2128q5aAVQL.png" alt=""></a></div>
+            <div class="b"><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2496/2496110.png" alt=""></a></div>
+            <div class="c"><a href="#"><img src="https://www.omnicoreagency.com/wp-content/uploads/2018/09/Instagram-Logo-PNG-2018.png" alt=""></a></div>
+            <div class="d"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZIUwdY5HH3cj6pdeITyJBh0iUO4QoAPd_GA&s" alt=""></a></div>
+        </div><br>
+    </footer>
+    <footer class="footer2">
+        <center><p>Copyright © 2023 Company Name</p></center>
+
+    </footer>
+    <script src="./data.js"></script>
+    <script>
+        document.querySelector(".addto").addEventListener("click",()=>{
+            window.location.href="./cart.html"
+        })
+
+        document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    let query = event.target.querySelector('input').value.toLowerCase();
+    let results = [...fruits, ...leafyVegetables, ...vegetables].filter(item => 
+        item.name.toLowerCase().includes(query)
+    );
+    
+    displayResults(results);
+});
+
+    // Search//
+
+    function displayResults(results) {
+        const resultContainer = document.getElementById('result-cards');
+        resultContainer.innerHTML = '';
+
+        if (results.length === 0) {
+            resultContainer.innerHTML = '<p>No items found</p>';
+            return;
+        }
+
+        results.forEach(item => {
+            const card = document.createElement('div');
+            card.classList.add('result-card');
+            card.innerHTML = `
+                <img src="${item.image}" alt="${item.name}" width="300" style="border-radius: 8px; margin-bottom: 10px;">
+                <h3 style="margin: 10px 0;">${item.name}</h3>
+                <p>Price: ₹${item.price}</p>
+                <button class="add-to-cart-btn" style="padding: 10px 20px; font-size: 14px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">Add to Cart</button>
+            `;
+            resultContainer.appendChild(card);
+
+            card.querySelector('.add-to-cart-btn').addEventListener('click', () => {
+
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                cart.push({ name: item.name, price: item.price, image: item.image });
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${item.name} has been added to the cart.`);
+            });
+        });
+    }
+
+
+    </script>
+    
+</body>
+</html>

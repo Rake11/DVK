@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("Assets/indexbg2.jpg") no-repeat center center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .quote {
+            color: rgba(red, green, blue, alpha);
+            position: absolute;
+            top: 5%;
+            left: 10%;
+        }
+
+        #signup-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgba(229, 245, 227, 0.5);
+            box-shadow: 0 4px 8px rgba(20, 255, 75, 0.1);
+            border-radius: 8px;
+            position: relative;
+            right: -20%;
+           
+        }
+
+        .signup-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .signup-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .signup-btn:hover {
+            background-color: rgb(37, 36, 36);
+            color: #4CAF50;
+        }
+
+        .signup-form p {
+            text-align: center;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .signup-form a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .signup-form a:hover {
+            text-decoration: underline;
+        }
+
+        span {
+            background-color: black;
+            border-radius: 5px;
+            color: #4CAF50;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #login-form {
+            display: none;
+            background-color: rgba(229, 245, 227, 0.5);
+            box-shadow: 0 4px 8px rgba(20, 255, 75, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote"><h1>DVK ORGANICS</h1></div>
+    <div id="form-container">
+        <!-- Sign Up Form -->
+        <form id="signup-form" class="signup-form">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <p>Already have an account? <a href="#" id="switch-to-login"><span>Log In</span></a></p>
+        </form>
+
+        <!-- Log In Form -->
+        <form id="login-form" class="signup-form">
+            <h2>Log In</h2>
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="signup-btn"><a href="open.html">Log In</a></button>
+            <p>Don't have an account? <a href="#" id="switch-to-signup"><span>Sign Up</span></a></p>
+        </form>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
